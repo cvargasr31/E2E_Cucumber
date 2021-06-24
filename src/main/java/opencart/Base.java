@@ -31,7 +31,7 @@ public class Base {
         if(driver!=null){
             if(browserVersion == null){
                 browserVersion = ((RemoteWebDriver) driver).getCapabilities().getVersion();
-                //setEnvVariables();
+                setEnvVariables();
             }
             driver.quit();
         }
