@@ -16,15 +16,14 @@ import java.io.IOException;
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 
 public class Base {
-    public WebDriver driver;
+    public static WebDriver driver;
     private final String browser = System.getProperty("browser");
     private String browserVersion;
 
-    public WebDriver initializeDriver(){
+    public void initializeDriver(){
         driver = buildDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        return driver;
     }
 
     public void teardown(){

@@ -5,14 +5,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import opencart.Base;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import pageobjects.MainPage;
 import pageobjects.RegisterPage;
 import pageobjects.SuccessRegisterPage;
 import utilities.StringMethods;
 
 public class RegisterStepDefinitions extends Base {
-    private final WebDriver driver = Hooks.driver;
     private RegisterPage registerPage;
 
     @Given("The users go to the register form")

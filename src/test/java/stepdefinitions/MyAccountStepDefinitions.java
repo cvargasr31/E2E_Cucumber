@@ -8,14 +8,12 @@ import io.cucumber.java.en.When;
 import opencart.Base;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 import pageobjects.EditAccountFormPage;
 import pageobjects.MyAccountPage;
 import pageobjects.WishListPage;
 import utilities.StringMethods;
 
 public class MyAccountStepDefinitions extends Base {
-    private final WebDriver driver = Hooks.driver;
     private MyAccountPage myAccountPage;
 
     @Given("The user logs into the application with username {string} and password {string}")
